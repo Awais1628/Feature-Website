@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Web application</title>
+</head>
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="./img/logo-white.png" style="width: 130px; height: auto; margin-right: 20px;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+            <li class="nav-item" style="margin-left: 20px;">
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item" style="margin-left: 20px;">
+              <a class="nav-link text-light" href="#">Pages</a>
+            </li>
+            <li class="nav-item dropdown " style="margin-left: 20px;">
+              <span class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Movie
+              </span>
+              <ul class="dropdown-menu" id="dmenu" style="margin-left: 20px; ">
+                <li><a class="btn dropdown-item" data-filter="all" href="#">All</a></li>
+                <li><a class="btn dropdown-item" data-filter="action" href="#">Action</a></li>
+                <li><a class="btn dropdown-item" data-filter="comedy" href="#">Comedy</a></li>
+                <li><a class="btn dropdown-item" data-filter="thriller" href="#">Thriller </a></li>
+                <li><a class="btn dropdown-item" data-filter="aimation" href="#">Aimation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown " style="margin-left: 20px;">
+              <a class="nav-link text-light" href="#">Events</a>
+            </li>
+            <li class="nav-item" style="margin-left: 20px;">
+              <a class="nav-link text-light" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" id="search-item"  type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success text-light" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+       <!-- home section start.... -->
+       <section id="home-section">
+        <h3 class="h-primary ">Thriller Movie</h3>
+        <h2 class="text-light"><b>Wrong Turns<br>Part 2</b></h2>
+        <p class="text-light">Writen and Directed by Aleeha Rose/ Ireland 2023. </p>
+        <div class="button-wrapper">
+        <a href="https://demo.ovatheme.com/aovis/movie/wrong-turns-part-2/" title="Wrong Turns Part 2">
+        <button class="btn btn-light btn-lg" style="padding: 8px 30px;"><a href="https://demo.ovatheme.com/aovis" style="text-decoration: none; color: black;">More Info</a>  </button> </a>
+        <button class="btn btn-warning btn-lg" style="padding: 8px 30px;">Get Ticket </button>
+        
+        </div>
+
+        <div class="container">
+            <a class="btn btn-left"><i class="fa-solid fa-chevron-left"></i></a>
+            <a class="btn btn-right"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="overlay">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <h3 class="text-light">Trailers</h3>
+            <img src="./img/arrow.png" style="width: 60px; height: 60px;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col col-md-6 col-lg-6">
+                    <img src="./img/1.jpg" style="width: 150px; height: 120px;" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col col-md-6 col-lg-6">
+                    <img src="./img/2.jpg" style="width: 150px; height: 120px;" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col col-md-6 col-lg-6">
+                    <img src="./img/3.jpg" style="width: 150px; height: 120px;" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col col-md-6 col-lg-6">
+                    <img src="./img/4.jpg" style="width: 150px; height: 120px;" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section> 
+    <!-- home section end.... -->
+
+    <!-- Movies Now Playing section -->
+    <section class="service-section" id="store-items" style="padding-bottom: 100px; padding-top: 30px; background-color: beige;">
+         <div class="container text-center common-title fw-bold">
+          <p class="p-1">Watch New Movies</p>
+          <h2 class="common-heading" style="font-size: 3rem;">Movies Now Playing</h2>
+          <hr class="w-25 mx-auto">
+          
+        </div>
+        <div class="container mt-5 d-flex">
+          <div class="row g-5 product">
+            <div class="divbox col-12 col-md-6 col-lg-3">
+              <div class="text-center card-box rounded-2 p-1 shadow">
+                <div class="image-con">
+                </div>
+
+                <div class="overlay-text" style="margin-bottom: -33%;">
+                  <p style="font-size: 10px;  text-align: left; padding-left: 35px;">comady/180Mins</p>
+                  <h3 class="text-light" style="font-size: 16px; text-align: left; padding-left: 35px;"><b>The fifty Day</b></h3>  
+                  <button class="btn btn-light get-ticket-button">Get Ticket</button>
+                  <div class="timing-options" style="display: none; font-size: xx-small; padding-left: 10px;">
+                    <label for="timingSelect">Select Timing:</label>
+                    <select class="timing-select">
+                      <option value="" disabled selected>Select time</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="2:30 PM">2:30 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="9:15 PM">9:15 PM</option>
+                    </select>
+                    <button class="btn btn-light btn-sm book-ticket-button" style="font-size: xx-small;">Book Ticket</button>
+                  </div>
+                  
+              </div>
+              </div>
+            </div>
+              <div class="divbox col-12 col-md-6 col-lg-3" >
+                <div class="text-center card-box rounded-2 p-1 shadow">
+                  <div class="image-container">
+                  </div>                  
+                 
+                  <div class="overlay-text aimation" style="margin-bottom: -33%;" > 
+                    <p style="font-size: 10px; text-align: left; padding-left: 35px;">Aimation/190Mins</p>
+                    <h3 class="text-light" style="font-size: 16px;"><b>Black And White Twins</b></h3>  
+                    <button class="btn btn-light get-ticket-button">Get Ticket</button>
+                    <div class="timing-options" style="display: none; font-size: xx-small; padding-left: 10px;">
+                      <label for="timingSelect">Select Timing:</label>
+                      <select class="timing-select">
+                        <option value="" disabled selected>Select time</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="2:30 PM">2:30 PM</option>
+                        <option value="6:00 PM">6:00 PM</option>
+                        <option value="9:15 PM">9:15 PM</option>
+                      </select>
+                      <button class="btn btn-light btn-sm book-ticket-button" style="font-size: xx-small;">Book Ticket</button>
+                    </div>
+                </div>
+                </div>
+  
+            </div>
+            <div class="divbox col-12 col-md-6  col-lg-3">
+              <div class="text-center card-box rounded-2 p-1 shadow">
+                <div class="image-container1">
+                </div> 
+                <div class="overlay-text " style="margin-bottom: -33%;">
+                  <p style="font-size: 10px;  text-align: left; padding-left: 35px;">Thriller/180Mins</p>
+                  <h3 class="text-light" style="font-size: 16px; text-align: left; padding-left: 35px;"><b>The Scariest Dream</b></h3>  
+                  <button class="btn btn-light get-ticket-button">Get Ticket</button>
+                  <div class="timing-options" style="display: none; font-size: xx-small; padding-left: 10px;">
+                    <label for="timingSelect">Select Timing:</label>
+                    <select class="timing-select">
+                      <option value="" disabled selected>Select time</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="2:30 PM">2:30 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="9:15 PM">9:15 PM</option>
+                    </select>
+                    <button class="btn btn-light btn-sm book-ticket-button" style="font-size: xx-small;">Book Ticket</button>
+                  </div>
+              </div>
+              </div>
+  
+            </div>
+            <div class="divbox col-12 col-md-6 col-lg-3">
+              <div class="text-center card-box rounded-2 p-1 shadow">
+                <div class="image-container2">
+                </div> 
+                <div class="overlay-text " style="margin-bottom: -33%;">
+                  <p style="font-size: 10px;  text-align: left; padding-left: 35px;">Thriller/180Mins</p>
+                  <h3 class="text-light" style="font-size: 16px; text-align: left; padding-left: 35px;"><b>The Seventh Day</b></h3>  
+                  <button class="btn btn-light get-ticket-button">Get Ticket</button>
+                  <div class="timing-options" style="display: none; font-size: xx-small; padding-left: 10px;">
+                    <label for="timingSelect">Select Timing:</label>
+                    <select class="timing-select">
+                      <option value="" disabled selected>Select time</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="2:30 PM">2:30 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="9:15 PM">9:15 PM</option>
+                    </select>
+                    <button class="btn btn-light btn-sm book-ticket-button" style="font-size: xx-small;">Book Ticket</button>
+                  </div>
+              </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Top Trending Movies section -->
+    <section class="trending-section mt-5" style="padding-bottom: 50px; background-color: rgba(241, 241, 121, 0.5);">
+        <!-- Top Trending Movies content here -->
+    </section>
+
+    <!-- Movies Coming Soon section -->
+    <section class="service-section" style="padding-bottom: 50px; padding-top: 40px;">
+        <!-- Movies Coming Soon content here -->
+    </section>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.dropdown-item');
+            const storeImage = document.querySelectorAll('.divbox');
+
+            buttons.forEach((button) => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const filter = e.target.dataset.filter;
+
+                    storeImage.forEach((item) => {
+                        if (filter === 'all') {
+                            item.style.display = 'block';
+                        } else {
+                            if (item.classList.contains(filter)) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Show action movies on "Action" button click by default
+            const actionButton = document.querySelector('[data-filter="action"]');
+            actionButton.click();
+        });
+        
+    </script>
+    <script src="https://kit.fontawesome.com/3a75c304f1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

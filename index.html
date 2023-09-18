@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Web appication</title>
+</head>
+<body>
+    <!-- nav bar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid">
+        <img src="./img/logo-white.png" style="width: 130px; height: auto; margin-right: 20px;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+            <li class="nav-item" style="margin-left: 20px;">
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item" style="margin-left: 20px;">
+              <a class="nav-link text-light" href="#">Pages</a>
+            </li>
+            <li class="nav-item dropdown " style="margin-left: 20px;">
+              <span class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Movie
+              </span>
+              <ul class="dropdown-menu" id="dmenu" style="margin-left: 20px; ">
+                <li><a class="btn dropdown-item" data-filter="all" href="#">All</a></li>
+                <li><a class="btn dropdown-item" data-filter="action" href="#">Action</a></li>
+                <li><a class="btn dropdown-item" data-filter="comedy" href="#">Comedy</a></li>
+                <li><a class="btn dropdown-item" data-filter="thriller" href="#">Thriller </a></li>
+                <li><a class="btn dropdown-item" data-filter="aimation" href="#">Aimation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown " style="margin-left: 20px;">
+              <a class="nav-link text-light" href="#">Events</a>
+            </li>
+            <li class="nav-item" style="margin-left: 20px;">
+              <a class="nav-link text-light" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" id="search-item"  type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success text-light" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+      <!-- nav bar end -->
+
+      <!-- home section start.... -->
+      <section id="home-section">
+        <h3 class="h-primary ">Thriller Movie</h3>
+        <h2 class="text-light"><b>Wrong Turns<br>Part 2</b></h2>
+        <p class="text-light">Writen and Directed by Aleeha Rose/ Ireland 2023. </p>
+        <div class="button-wrapper">
+        <a href="https://demo.ovatheme.com/aovis/movie/wrong-turns-part-2/" title="Wrong Turns Part 2">
+        <button class="btn btn-light btn-lg" style="padding: 8px 30px;"><a href="https://demo.ovatheme.com/aovis" style="text-decoration: none; color: black;">More Info</a>  </button> </a>
+        <button class="btn btn-warning btn-lg" style="padding: 8px 30px;">Get Ticket </button>
+        
+        </div>
+
+        <div class="container">
+            <a class="btn btn-left"><i class="fa-solid fa-chevron-left"></i></a>
+            <a class="btn btn-right"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="overlay">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <h3 class="text-light">Trailers</h3>
+            <img src="./img/arrow.png" style="width: 60px; height: 60px;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col col-md-6 col-lg-6">
+                    <img src="./img/1.jpg" style="width: 150px; height: 120px;" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col col-md-6 col-lg-6">
+                    <img src="./img/2.jpg" style="width: 150px; height: 120px;" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col col-md-6 col-lg-6">
+                    <img src="./img/3.jpg" style="width: 150px; height: 120px;" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col col-md-6 col-lg-6">
+                    <img src="./img/4.jpg" style="width: 150px; height: 120px;" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section> 
+    <!-- home section end.... -->
+
+<!--  Movies now Playing section start -->
+    <section class="service-section" id="store-items" style="padding-bottom: 100px; padding-top: 30px; background-color:beige;">
+        <div class="container text-center common-title fw-bold">
+          <p class="p-1">Watch New Movies</p>
+          <h2 class="common-heading" style="font-size: 3rem;">Movies Now Playing</h2>
+          <hr class="w-25 mx-auto">
+          
+        </div>
+        <div class="container mt-5 d-flex">
+          <div class="row g-5 product">
+            <div class="divbox col-12 col-md-6 col-lg-3">
+              <div class="text-center card-box rounded-2 p-1 shadow">
+                <div class="image-con">
+                </div>
+
+                <div class="overlay-text" style="margin-bottom: -33%;">
+                  <p style="font-size: 10px;  text-align: left; padding-left: 35px;">comady/180Mins</p>
+                  <h3 class="text-light" style="font-size: 16px; text-align: left; padding-left: 35px;"><b>The fifty Day</b></h3>  
+                  <button class="btn btn-light get-ticket-button">Get Ticket</button>
+                  <div class="timing-options" style="display: none; font-size: xx-small; padding-left: 10px;">
+                    <label for="timingSelect">Select Timing:</label>
+                    <select class="timing-select">
+                      <option value="" disabled selected>Select time</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="2:30 PM">2:30 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="9:15 PM">9:15 PM</option>
+                    </select>
+                    <button class="btn btn-light btn-sm book-ticket-button" style="font-size: xx-small;">Book Ticket</button>
+                  </div>
+                  
+              </div>
+              </div>
+            </div>
+              <div class="divbox col-12 col-md-6 col-lg-3" >
+                <div class="text-center card-box rounded-2 p-1 shadow">
+                  <div class="image-container">
+                  </div>                  
+                 
+                  <div class="overlay-text aimation" style="margin-bottom: -33%;" > 
+                    <p style="font-size: 10px; text-align: left; padding-left: 35px;">Aimation/190Mins</p>
+                    <h3 class="text-light" style="font-size: 16px;"><b>Black And White Twins</b></h3>  
+                    <button class="btn btn-light get-ticket-button">Get Ticket</button>
+                    <div class="timing-options" style="display: none; font-size: xx-small; padding-left: 10px;">
+                      <label for="timingSelect">Select Timing:</label>
+                      <select class="timing-select">
+                        <option value="" disabled selected>Select time</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="2:30 PM">2:30 PM</option>
+                        <option value="6:00 PM">6:00 PM</option>
+                        <option value="9:15 PM">9:15 PM</option>
+                      </select>
+                      <button class="btn btn-light btn-sm book-ticket-button" style="font-size: xx-small;">Book Ticket</button>
+                    </div>
+                </div>
+                </div>
+  
+            </div>
+            <div class="divbox col-12 col-md-6  col-lg-3">
+              <div class="text-center card-box rounded-2 p-1 shadow">
+                <div class="image-container1">
+                </div> 
+                <div class="overlay-text " style="margin-bottom: -33%;">
+                  <p style="font-size: 10px;  text-align: left; padding-left: 35px;">Thriller/180Mins</p>
+                  <h3 class="text-light" style="font-size: 16px; text-align: left; padding-left: 35px;"><b>The Scariest Dream</b></h3>  
+                  <button class="btn btn-light get-ticket-button">Get Ticket</button>
+                  <div class="timing-options" style="display: none; font-size: xx-small; padding-left: 10px;">
+                    <label for="timingSelect">Select Timing:</label>
+                    <select class="timing-select">
+                      <option value="" disabled selected>Select time</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="2:30 PM">2:30 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="9:15 PM">9:15 PM</option>
+                    </select>
+                    <button class="btn btn-light btn-sm book-ticket-button" style="font-size: xx-small;">Book Ticket</button>
+                  </div>
+              </div>
+              </div>
+  
+            </div>
+            <div class="divbox col-12 col-md-6 col-lg-3">
+              <div class="text-center card-box rounded-2 p-1 shadow">
+                <div class="image-container2">
+                </div> 
+                <div class="overlay-text " style="margin-bottom: -33%;">
+                  <p style="font-size: 10px;  text-align: left; padding-left: 35px;">Thriller/180Mins</p>
+                  <h3 class="text-light" style="font-size: 16px; text-align: left; padding-left: 35px;"><b>The Seventh Day</b></h3>  
+                  <button class="btn btn-light get-ticket-button">Get Ticket</button>
+                  <div class="timing-options" style="display: none; font-size: xx-small; padding-left: 10px;">
+                    <label for="timingSelect">Select Timing:</label>
+                    <select class="timing-select">
+                      <option value="" disabled selected>Select time</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="2:30 PM">2:30 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="9:15 PM">9:15 PM</option>
+                    </select>
+                    <button class="btn btn-light btn-sm book-ticket-button" style="font-size: xx-small;">Book Ticket</button>
+                  </div>
+              </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  Movies now Playing section ends -->
+      
+      <!--  Top trending moives section start -->
+      <section class="trending-section mt-5" style="padding-bottom: 50px; background-color: rgba(241, 241, 121, 0.5);">
+        <div class="row g-5 container common-title fw-bold">
+          <div class="col-12 col-md-6 col-lg-6" style="padding: 0 80px;">
+            <p>Checkout Movies</p>
+            <h2 style="font-size: 2.5rem;">Top Featured Movies</h2>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6" style="padding-left: 130px; font-family: 'Times New Roman', Times, serif;">
+            <p><br>Phasellus non cursus ligula, sed mattis urna. Aenean ac tor gravida, volutpat quam eget, consequat elit.</p>
+          </div>
+        </div>
+        <div class="row m-5 ">
+          <div class="boxing col-12 col-md-12 col-lg-4">
+            <div class="text-center  p-1 shadow d-flex flex-column align-items-center ">
+              <img src="./img/4.jpg" alt="link" class="img-fluid" style="width: 300px; height: 300px; filter: brightness(0.8);">
+              <div class="text-center  p-1 ">
+                <h4>The fifty Day</h4>  
+                  <p><i class="fa-solid fa-tags comedy"></i>comedy &nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-clock"></i>180Mins</p>
+                </div>
+            </div>
+          </div>
+          <div class="boxing col-12 col-md-12 col-lg-4">
+            <div class="text-center p-1 shadow d-flex flex-column align-items-center ">
+              <img src="./img/6.jpg" alt="link" class="img-fluid" style="width: 300px; height: 300px; filter: brightness(0.8);">
+              <div class="text-center p-1 ">
+                <h4>The Witcher Seasons 2</h4>  
+                <p><i class="fa-solid fa-tags action"></i>Action &nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-clock"></i>180Mins</p>  
+              </div>
+            </div>
+          </div>
+          <div class="boxing col-12 col-md-12 col-lg-4">
+            <div class="text-center  p-1 shadow d-flex flex-column align-items-center ">
+              <img src="./img/7.jpg" alt="link" class="img-fluid" style="width: 300px; height: 300px;filter: brightness(0.8);">
+              <div class="text-center  p-1 ">
+                <h4>Wrong turn Part 2</h4>  
+                <p><i class="fa-solid fa-tags thriller"></i>Thriller &nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-clock"></i>180Mins</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- <div class="row boxbar-">
+          <div class="col ">
+            <p style="text-align: center;">more comedy & horror movies you can explore</p>
+          </div>
+          <div class="col ">
+            <button class="btn btn-warning"><a src="https://demo.ovatheme.com/aovis/#"></a> Explore Now</button>
+          </div>
+        </div> -->
+      </section>
+      <!--  Top trending moives section ends -->
+
+      <!-- award section starts -->
+      <section class="bg-main more-info-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 ">
+              <i class="fa-solid fa-compact-disc" style="color: orangered;"></i>
+              <p class="text-light">Documentary</p>
+              <h2 class="text-light" style="font-size: 50px;">Life Under an Umbrella</h2> 
+              <p class="text-light">Phasellus non cursus ligula, sed mattis urna. Aenean ac tor gravida,<br> volutpat quam eget, consequat elit.</p> 
+              <img src="./img/awards-banner-01.png" alt="">
+              <img src="./img/awards-banner-02.png" alt="">
+              <br><br>
+              <button class="btn btn-warning"><a href="https://demo.ovatheme.com/aovis/#" style="text-decoration: none; color: black;"> More Info</a></button>
+            </div>
+         
+        
+            <div class="col-12 col-sm-12 col-md-4 d-flex flex-column justify-content-center align-items-end">
+              <i class="fa-solid fa-play fa-beat-fade fa-2xl" style="color: orangered; "></i><br>
+              <h3>Watch the Trailer</h3>
+              
+              <img decoding="async" loading="lazy" width="311" height="124" src="https://demo.ovatheme.com/aovis/wp-content/uploads/2023/02/image-arrow-video.png" class="attachment" alt=""  sizes="(max-width: 311px) 100vw, 311px" style="transform: translate(-70%, -10%)">
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- Awards sections ends -->
+
+<!--  Latest news section start -->
+<section class="trending-section " style="padding-bottom: 50px; padding-top: 30px; background-color:beige;">
+  <div class="container" style="text-align: center; padding-bottom: 20px; padding-top: 20px;">
+    <i class="fa-solid fa-compact-disc fa-2xl" style="color: #ff7300;"></i> <br><br>   
+      <p><b>Directly Blog Posts</b></p>
+      <h2 style="font-size: 3rem; "><b>Latest News&Articles<br> from the Posts</b></h2>
+   
+    
+  </div>
+  <div class="row" style="margin-top: 20px; margin-left: 60px; margin-right: 60px;">
+    <div class="boxing col-12 col-md-12 col-lg-4 shadow">
+      <div class="text-center  p-1 d-flex flex-column align-items-center  ">
+        <img src="./img/9.jpg" alt="link" class="img-fluid" style="width: 300px; height: 300px;">
+        
+      </div>
+      <span class="date" style="color: white; background-color: #ff6600; padding: 5px 10px; margin-left: 50%;  "> 23 Mar, 2023 </span>
+      <div class="icon-container " style="padding-left: 30px; padding-top: 20px; padding-bottom: 20px;">
+        <p><i class="fa-solid fa-circle-user" style="color: #ff7b00;"></i> | <i class="fa-solid fa-comments tool-comments" style="color: #ff6600;"></i> 0 comments </p>
+        
+      <h4>The Foreign Oscar Nominations 2023</h4>  
+      <a href="https://demo.ovatheme.com/aovis/see-meila-enjoyable-capturing-moment/"  style="color: #ff7b00; text-decoration:none;">Read more</a>
+      </div>
+    </div>
+    <div class="boxing col-12 col-md-12 col-lg-4 shadow">
+      <div class="text-center p-1 d-flex flex-column align-items-center ">
+        <img src="./img/10.jpg" alt="link" class="img-fluid" style="width: 300px; height: 300px;">
+      </div>
+      <span class="date" style="color: white; background-color: #ff6600; padding: 5px 10px; margin-left: 50%;  "> 23 Mar, 2023 </span>
+      <div class=" " style="padding-left: 30px; padding-top: 20px; padding-bottom: 20px;">
+        <p><i class="fa-solid fa-circle-user" style="color: #ff7b00;"></i> | <i class="fa-solid fa-comments" style="color: #ff6600;"></i> 2 comments</p>
+        <h4>See Meila enjoyable capturing moment</h4>  
+        <a href="https://demo.ovatheme.com/aovis/the-foreign-oscar-nominations/" style="color: #ff7b00; text-decoration:none;">Read more</a>
+      </div>
+    </div>
+    <div class="boxing col-12 col-md-12 col-lg-4 shadow">
+      <div class="text-center  p-1 d-flex flex-column align-items-center  ">
+        <img src="./img/11.jpg" alt="link" class="img-fluid" style="width: 300px; height: 300px;">
+      </div>
+      <span class="date" style="color: white; background-color: #ff6600; padding: 5px 10px; margin-left: 50%;  "> 23 Mar, 2023 </span>
+      <div class="" style="padding-left: 30px; padding-top: 20px; padding-bottom: 20px;">
+        <p><i class="fa-solid fa-circle-user" style="color: #ff7b00;"></i> | <i class="fa-solid fa-comments" style="color: #ff6600;"></i> 5 comments</p>
+        <h4>Upcoming New Season 5 Just Flow in !</h4>  
+        <a href="https://demo.ovatheme.com/aovis/upcoming-new-season-5-just-flow-in/"  style="color: #ff7b00; text-decoration:none;">Read more</a>
+      </div>
+    </div>
+    
+  </div>
+
+</section>
+
+<!--  Latest news section ends -->
+
+<!--   Movies Coming Soon section start -->
+<section class="service-section" style="padding-bottom: 50px; padding-top: 40px;">
+  <div class="container text-center common-title fw-bold">
+    <p class="">New Upcoming Movies</p>
+    <h2 class="common-heading" style="font-size: 3rem;">Movies Coming Soon</h2>
+    <hr class="w-25 mx-auto">
+  </div>
+  <div class="container mt-5">
+    <div class="row g-5">
+      <div class="divbox col-12 col-md-6 col-lg-3">
+        <div class="text-center card-box rounded-2 p-1 shadow">
+          <div class="image-cont1"></div>
+          
+          <div class="overlay-text" style="margin-bottom: -33%;">
+            <p style="font-size: 10px;  text-align: left; padding-left: 35px;">Adventure/180Mins</p>
+            <h3 class=" text-light " style="font-size: 18px; text-align: left; padding-left: 35px;">Into The Wild </h3>  
+            <button class="btn btn-light"><a href="https://demo.ovatheme.com/aovis/" style="text-decoration: none; color: black">Watch Trailer</a></button> 
+        </div>
+        </div>
+      </div>
+        <div class="divbox col-12 col-md-6 col-lg-3" >
+          <div class="text-center card-box rounded-2 p-1 shadow">
+            <div class="image-cont2"></div>
+           
+            <div class="overlay-text aimation" style="margin-bottom: -33%;" >
+              <p style="font-size: 10px; text-align: left; padding-left: 35px;">Aimation/190Mins</p>
+              <h3 class="text-light" style="font-size: 16px;">The Pursuit Of Dreams</h3>  
+              <button class="btn btn-light"><a href="https://demo.ovatheme.com/aovis/" style="text-decoration: none; color: black">Watch Trailer</a></button> 
+          </div>
+          </div>
+
+      </div>
+      <div class="divbox col-12 col-md-6 col-lg-3">
+        <div class="text-center card-box rounded-2 p-1 shadow">
+          <div class="image-cont3"></div>
+          
+          <div class="overlay-text " style="margin-bottom: -33%;">
+            <p style="font-size: 10px;  text-align: left; padding-left: 35px;">Crime/180Mins</p>
+            <h3 class="text-light" style="font-size: 16px; text-align: left; padding-left: 35px;">Alis Keep Walking</h3>  
+            <button class="btn btn-light"><a href="https://demo.ovatheme.com/aovis/" style="text-decoration: none; color: black">Watch Trailer</a></button> 
+        </div>
+        </div>
+
+      </div>
+      <div class="divbox col-12 col-md-6 col-lg-3">
+        <div class="text-center card-box rounded-2 p-1 shadow">
+          <div class="image-cont4"></div>
+         
+          <div class="overlay-text " style="margin-bottom: -33%;">
+            <p style="font-size: 10px;  text-align: left; padding-left: 35px;">Adventure/180Mins</p>
+            <h3 class="text-light" style="font-size: 16px; text-align: left; padding-left: 35px;">The Way Of Water</h3>  
+            <button class="btn btn-light"><a href="https://demo.ovatheme.com/aovis/" style="text-decoration: none; color: black">Watch Trailer</a></button> 
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!--  Movies Coming Soon section ends -->
+
+<!--  Movies Current section start -->
+<section class="service-section" style="padding-top: 40px;">
+  <div class="row">
+    <div class="col col-lg-4 col-md-4 conts1 d-flex flex-column align-items-center" style="padding-top: 70px;">
+      <img class="lastbar" src="./img/clapperboard.png" alt="" >
+      <h1 style="color: white; text-align: center;"><b>Top 6 Movies in Theaters</b></h1>
+    </div>
+    <div class="col col-lg-4 col-md-4 conts2 d-flex flex-column align-items-center" style="padding-top: 70px;">
+      <img class="lastbar" src="./img/film (1).png" alt="">
+      <h1 style="color: white; text-align: center;"><b>Watch Coming<br>Soon Movies</b></h1>
+    </div>
+    <div class="col col-lg-4 col-md-4 conts3 d-flex flex-column align-items-center" style="padding-top: 70px;">
+      <img class="lastbar" src="./img/video-camera.png" alt="">
+      <h1 style="color: white; text-align: center;"><b>Hot Movies Trailers Live Now</b></h1>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!--  Movies current section ends -->
+
+<!-- footer section -->
+<footer class="main-footer-section">
+  <div class="contact-details ">
+     <div class="footer-section py-5 text-white">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-md-6 col-6  ">
+                  <div class="footer-links">
+                      <h4 style="color: #ff6600;"><br><br><br>Buy movie tickets easily with<br> Aovis system nation wide</h4>
+                      <button class="btn btn-warning get-ticket-button">Get Your Ticket</button>
+                  <div class="timing-options" style="display: none; font-size: small; padding-left: 10px;">
+                    <label for="timingSelect">Select Timing:</label>
+                    <select class="timing-select">
+                      <option value="" disabled selected>Select time</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="2:30 PM">2:30 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="9:15 PM">9:15 PM</option>
+                    </select>
+                    <button class="btn btn-warning  book-ticket-button" style="font-size: small;">Book Ticket</button>
+                  </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6 col-6">
+                  <div class="footer-links">
+                      <h4 class="mt-5 mb-3" style="color: #ff6600;">Movies</h4>
+                      <ul class="text-light-grey list-unstyled d-flex flex-column gap-2" style="font-size: 12px;">
+                          <li>Action</li>
+                          <li>Adventure</li>
+                          <li>Aimation</li>
+                          <li>Comedy</li>
+                          <li>Crime</li>
+
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6 col-6">
+                  <div class="footer-links">
+                      <h4 class="mt-5 mb-3" style="color: #ff6600;">Links</h4>
+                      <ul class="text-light-grey list-unstyled d-flex flex-column gap-2" style="font-size: 12px;">
+                          <li>About</li>
+                          <li>My account</li>
+                          <li>News</li>
+                          <li>Latest Events</li>
+                          <li>Contact</li>
+
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-12">
+                  <div class="footer-links">
+                      <h4 class="mt-5 mb-3 " style="color: #ff6600;">News Letter</h4>
+                      <div class="email-section input-group mb-3 w-75">
+                          <input type="text" id="emailInput" class="form-control" placeholder="Email...."
+                                 aria-label="Recipient's username" aria-describedby="basic-addon2">
+                         <button class="btn btn-warning" id="subscribeButton">Send</button> 
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <div class="container">
+      <hr class="container mx-auto">
+
+      <div class="row">
+          <div class="col-lg-8 col-12 text-white">
+              Copyright ©2023 All rights reserved. | This template is made with by <span class="bg-theme"> as.com</span>
+          </div>
+          <div class="col-md-4 col-12  " style="color: #ff6600;">
+              <div class="d-flex justify-content-center justify-content-lg-end gap-5 mt-lg-0 mt-3">
+                  
+                      <div class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3">
+                          <i class="fa-brands fa-instagram"></i>
+                      </div>
+                  
+                  <div class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3">
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                  <div class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3">
+                      
+                      <i class="fa-brands fa-twitter"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+              
+  </div>
+</footer>
+<!-- footer section ends-->
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      ></script>
+      <script src="script.js"></script>
+      <script src="https://kit.fontawesome.com/3a75c304f1.js" crossorigin="anonymous"></script>
+</body>
+</html>
